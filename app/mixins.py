@@ -32,7 +32,7 @@ class PrintBookMixin(DisplayContent):
 
 class SerializeMixin(SerializeJson, SerializeXml):
     def serialize(self, serialize_type: str) -> str:
-        serializers= {
+        serializers = {
             "json": self.serialize_json,
             "xml": self.serialize_xml,
         }
